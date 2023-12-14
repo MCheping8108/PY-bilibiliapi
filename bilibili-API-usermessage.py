@@ -14,10 +14,10 @@ headers = {
 	'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36'
 }
 #获取数据 并在数据中获取data内容
-response = requests.get(url,headers=headers).json()['data']
-response2 = requests.get(url2,headers=headers).json()['data']
-response3 = requests.get(url3,headers=headers).json()['data']
-response4 = requests.get(url4,headers=headers).json()['data']
+response = requests.get(url,headers=headers).json()["data"]
+response2 = requests.get(url2,headers=headers).json()["data"]
+response3 = requests.get(url3,headers=headers).json()["data"]
+response4 = requests.get(url4,headers=headers).json()["data"]
 #在data内容分别获取名字(name)、性别(sex)、简介(sign)、职业区(official)
 name = response['name']
 sex = response['sex']
